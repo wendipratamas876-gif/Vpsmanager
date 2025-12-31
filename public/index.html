@@ -1,0 +1,33 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPS Manager - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>🔐 VPS Manager Login</h1>
+            <p>Login menggunakan Telegram untuk mengelola VPS Anda</p>
+            
+            <div id="loginForm">
+                <input type="text" id="userId" placeholder="Username atau Email" required>
+                <button onclick="requestLogin()">Login via Telegram</button>
+            </div>
+            
+            <div id="qrSection" style="display: none;">
+                <h3>Scan QR Code atau klik link di bawah:</h3>
+                <div id="qrcode"></div>
+                <p id="telegramLink"></p>
+                <p class="info">Buka Telegram dan scan QR code untuk login</p>
+                <div id="statusMessage"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+</body>
+</html>
